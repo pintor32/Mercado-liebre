@@ -174,7 +174,7 @@ main .description {
 footer {
     text-align: center;
     color: #666;
-    background-color: #ebebeb;
+    background-color: white;
     padding: 5px;
     margin: auto;
     margin-top: 20px;
@@ -355,15 +355,43 @@ footer .icono {
     padding: 10px;
 }
 
+.register h1 {
+    font-size: 20px;
+}
+
 .register p {
     margin: 10px;
 }
 
-.register form p input {
-    display: flex;
+form p input {
+    display: block;
     width: 80%;
     border-radius: 5px;
+    text-align: center;
     justify-content: center;
     margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+form p button {
+    background: #1259c3;
+    color: white;
+    width: 80%;
+    border-radius: 5px;
     padding: 5px;
+}
+
+/* Login */
+
+.login {
+    background: gainsboro;
+    margin: auto;
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+}
+
+.login p {
+    margin: 10px;
 }
