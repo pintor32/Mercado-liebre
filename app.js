@@ -8,5 +8,8 @@ app.use(express.static(path.resolve(__dirname, './public')));
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/home.html');
 });
+app.get('/register', (req,res)=>{
+    res.sendFile(__dirname + '/views/register.html');
+});
 
 app.listen(port, ()=>console.log('♥ running with love'))

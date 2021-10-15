@@ -11,23 +11,30 @@
 }
 
 /* header */
+
 header {
     background-color: #EAC926;
     width: 100vw;
     padding: 10px;
     margin: auto;
+    text-align: center;
 }
-header .top-header{
+
+header .top-header {
     width: 90vw;
 }
-header .top-header img{
+
+header .top-header img {
     width: 50%;
 }
-.searchbar{
-    display: block;
+
+.searchbar {
+    display: flex;
     margin: auto;
     margin-left: 25px;
+    justify-content: center;
 }
+
 header .burger-menu {
     width: 30px;
     height: 30px;
@@ -39,10 +46,12 @@ header .burger-menu {
     margin-top: 10px;
     border-radius: 5px;
 }
+
 header .top-header .copy-header {
     margin: auto;
     margin-top: 10px;
 }
+
 header nav {
     width: 95vw;
     margin-top: 10px;
@@ -57,12 +66,15 @@ header nav ul li a {
 header nav ul {
     list-style: none;
 }
-section img{
+
+section img {
     display: block;
     width: 100vw;
 }
+
 /* main */
-main{
+
+.home {
     background: gainsboro;
     width: 95vw;
     margin: auto;
@@ -72,52 +84,60 @@ main section h3 {
     margin-top: 10px;
     font-size: 20px;
 }
-main .last-visit .products{
-    width: 90%;
-    margin: auto;
-}
-main .last-visit .products article{
-    position: relative;
-    text-align: center;
-    background-color: white;
-    box-shadow: 5px 9px 5px -4px rgba(56,55,56,1);
-    border-radius: 3px;
-    overflow: hidden;
-    padding: 15px;
-    margin-bottom: 5px;
 
-}
-main .last-visit .products article img{
-    max-width: 95%;
-    margin-bottom: 1px;
-    border-bottom: 1px solid gray;
-}
-main .last-visit .products article div p{
-    display: inline;
-}
-main .sale .products{
+main .last-visit .products {
     width: 90%;
     margin: auto;
 }
-main .sale .products article{
+
+main .last-visit .products article {
     position: relative;
     text-align: center;
     background-color: white;
-    box-shadow: 5px 9px 5px -4px rgba(56,55,56,1);
+    box-shadow: 5px 9px 5px -4px rgba(56, 55, 56, 1);
     border-radius: 3px;
     overflow: hidden;
     padding: 15px;
     margin-bottom: 5px;
 }
-main .sale .products article img{
+
+main .last-visit .products article img {
     max-width: 95%;
     margin-bottom: 1px;
     border-bottom: 1px solid gray;
 }
-main .sale .products article div p{
+
+main .last-visit .products article div p {
     display: inline;
 }
-main section article div i{
+
+main .sale .products {
+    width: 90%;
+    margin: auto;
+}
+
+main .sale .products article {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 9px 5px -4px rgba(56, 55, 56, 1);
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+main .sale .products article img {
+    max-width: 95%;
+    margin-bottom: 1px;
+    border-bottom: 1px solid gray;
+}
+
+main .sale .products article div p {
+    display: inline;
+}
+
+main section article div i {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -131,6 +151,7 @@ main section article div i{
     right: 7px;
     bottom: 38px;
 }
+
 main .price {
     display: block;
     margin-right: 20%;
@@ -166,16 +187,17 @@ footer .icono {
 }
 
 /* media querys */
+
 @media (min-width: 481px) {
-    header .top-header img{
+    header .top-header img {
         width: 30vw;
         margin: 5px;
     }
-    header .top-header{
+    header .top-header {
         display: flex;
         justify-content: space-between;
     }
-    header .copy-header{
+    header .copy-header {
         font-size: 12px;
         font-weight: bold;
         text-align: right;
@@ -187,55 +209,58 @@ footer .icono {
     header nav ul {
         display: flex;
     }
-    header nav ul li{
+    header nav ul li {
         margin: 0 5px;
     }
-    header nav ul li a{
+    header nav ul li a {
         font-size: 0.8em;
         font-weight: bold;
     }
     header .burger-menu {
         display: none;
     }
-    main .last-visit{
+    .register {
+        width: 80vw;
+    }
+    main .last-visit {
         width: 90%;
     }
-    main .sale{
+    main .sale {
         width: 90%;
     }
-    main .last-visit .products{
-        width: 90%;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    main .sale .products{
+    main .last-visit .products {
         width: 90%;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    main .last-visit .products article{
+    main .sale .products {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    main .last-visit .products article {
         width: 40%;
         margin-right: 15px;
     }
-    main .sale .products article{
+    main .sale .products article {
         width: 40%;
         margin-right: 15px;
     }
-    main section article div i{
+    main section article div i {
         font-size: 0.7em;
         block-size: auto;
     }
-    main section article div i{
+    main section article div i {
         position: absolute;
         right: 5px;
         bottom: 35px;
     }
-    main .price{
+    main .price {
         font-size: 0.7em;
     }
-    main .discount{
+    main .discount {
         font-size: 0.7em;
     }
     main .description {
@@ -243,23 +268,27 @@ footer .icono {
         font-size: 0.7em;
     }
 }
+
 @media (min-width: 768px) {
-    main .last-visit{
+    main .last-visit {
         width: 100%;
     }
-    header .top-header img{
+    header .top-header img {
         width: 30vw;
     }
-    header .top-header{
+    header .top-header {
         display: flex;
         justify-content: space-between;
         margin: auto;
     }
-    header .copy-header{
+    header .copy-header {
         text-align: right;
         font-size: 12px;
         font-weight: bold;
         align-items: center;
+    }
+    .register {
+        width: 50vw;
     }
     main .sale {
         width: 100%;
@@ -274,44 +303,67 @@ footer .icono {
     header nav ul {
         display: flex;
     }
-    header nav ul li{
+    header nav ul li {
         margin: 0 5px;
     }
-    header nav ul li a{
+    header nav ul li a {
         font-size: 16px;
         font-weight: bold;
     }
-    main .last-visit .products{
+    main .last-visit .products {
         width: 90%;
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
     }
-    main .last-visit .products article{
+    main .last-visit .products article {
         margin-right: 15px;
     }
-    main .sale .products{
+    main .sale .products {
         width: 90%;
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
     }
-    main .sale .products article{
+    main .sale .products article {
         margin-right: 15px;
     }
-    main section article div i{
+    main section article div i {
         position: absolute;
         right: 10px;
         bottom: 37px;
     }
-    main .price{
+    main .price {
         font-size: 0.7em;
     }
-    main .discount{
+    main .discount {
         font-size: 0.7em;
     }
     main .description {
         display: flex;
         font-size: 0.7em;
     }
+}
+
+/* Formulario */
+
+.register {
+    background: gainsboro;
+    margin: auto;
+    width: 90vw;
+    text-align: center;
+    padding: 10px;
+}
+
+.register p {
+    margin: 10px;
+}
+
+.register form p input {
+    display: flex;
+    width: 80%;
+    border-radius: 5px;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
 }
