@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-color: #EAC926;
+    width: 100vw;
+    padding: 10px;
+    margin: auto;
+}
+header .top-header{
+    width: 90vw;
+}
+header .top-header img{
+    width: 50%;
+}
+.searchbar{
+    display: block;
+    margin: auto;
+    margin-left: 25px;
+}
+header .burger-menu {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    background: hsl(240, 78%, 45%);
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+header .top-header .copy-header {
+    margin: auto;
+    margin-top: 10px;
+}
+header nav {
+    width: 95vw;
+    margin-top: 10px;
+    display: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul {
+    list-style: none;
+}
+section img{
+    display: block;
+    width: 100vw;
+}
+/* main */
+main{
+    background: gainsboro;
+    width: 95vw;
+    margin: auto;
+}
+
+main section h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+main .last-visit .products{
+    width: 90%;
+    margin: auto;
+}
+main .last-visit .products article{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 9px 5px -4px rgba(56,55,56,1);
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 5px;
+
+}
+main .last-visit .products article img{
+    max-width: 95%;
+    margin-bottom: 1px;
+    border-bottom: 1px solid gray;
+}
+main .last-visit .products article div p{
+    display: inline;
+}
+main .sale .products{
+    width: 90%;
+    margin: auto;
+}
+main .sale .products article{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 9px 5px -4px rgba(56,55,56,1);
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+main .sale .products article img{
+    max-width: 95%;
+    margin-bottom: 1px;
+    border-bottom: 1px solid gray;
+}
+main .sale .products article div p{
+    display: inline;
+}
+main section article div i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 7px;
+    bottom: 38px;
+}
+main .price {
+    display: block;
+    margin-right: 20%;
+    font-size: 18px;
+    block-size: 30%;
+}
+
+main .discount {
+    display: block;
+    font-size: 16px;
+    color: #39b54a;
+    block-size: 30%;
+}
+
+main .description {
+    font-size: 16px;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    background-color: #ebebeb;
+    padding: 5px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+footer .icono {
+    color: #1259c3;
+    font-size: 2em;
+}
+
+/* media querys */
+@media (min-width: 481px) {
+    header .top-header img{
+        width: 30vw;
+        margin: 5px;
+    }
+    header .top-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .copy-header{
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul {
+        display: flex;
+    }
+    header nav ul li{
+        margin: 0 5px;
+    }
+    header nav ul li a{
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    header .burger-menu {
+        display: none;
+    }
+    main .last-visit{
+        width: 90%;
+    }
+    main .sale{
+        width: 90%;
+    }
+    main .last-visit .products{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    main .sale .products{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    main .last-visit .products article{
+        width: 40%;
+        margin-right: 15px;
+    }
+    main .sale .products article{
+        width: 40%;
+        margin-right: 15px;
+    }
+    main section article div i{
+        font-size: 0.7em;
+        block-size: auto;
+    }
+    main section article div i{
+        position: absolute;
+        right: 5px;
+        bottom: 35px;
+    }
+    main .price{
+        font-size: 0.7em;
+    }
+    main .discount{
+        font-size: 0.7em;
+    }
+    main .description {
+        display: flex;
+        font-size: 0.7em;
+    }
+}
+@media (min-width: 768px) {
+    main .last-visit{
+        width: 100%;
+    }
+    header .top-header img{
+        width: 30vw;
+    }
+    header .top-header{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    header .copy-header{
+        text-align: right;
+        font-size: 12px;
+        font-weight: bold;
+        align-items: center;
+    }
+    main .sale {
+        width: 100%;
+    }
+    header .burger-menu {
+        display: none;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul {
+        display: flex;
+    }
+    header nav ul li{
+        margin: 0 5px;
+    }
+    header nav ul li a{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    main .last-visit .products{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    main .last-visit .products article{
+        margin-right: 15px;
+    }
+    main .sale .products{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    main .sale .products article{
+        margin-right: 15px;
+    }
+    main section article div i{
+        position: absolute;
+        right: 10px;
+        bottom: 37px;
+    }
+    main .price{
+        font-size: 0.7em;
+    }
+    main .discount{
+        font-size: 0.7em;
+    }
+    main .description {
+        display: flex;
+        font-size: 0.7em;
+    }
+}
