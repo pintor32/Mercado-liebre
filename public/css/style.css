@@ -29,10 +29,15 @@ header .top-header img {
 }
 
 .searchbar {
-    display: flex;
+    display: block;
     margin: auto;
-    margin-left: 25px;
-    justify-content: center;
+    width: 80%;
+    padding: 10px;
+}
+
+.searchbar div input {
+    width: 80%;
+    padding: 5px;
 }
 
 header .burger-menu {
@@ -275,6 +280,9 @@ footer .icono {
     }
     header .top-header img {
         width: 30vw;
+    }
+    .searchbar {
+        width: 40%;
     }
     header .top-header {
         display: flex;
