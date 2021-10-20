@@ -86,7 +86,7 @@ section img {
 }
 
 main section h3 {
-    margin-top: 10px;
+    margin: 20px;
     font-size: 20px;
 }
 
@@ -99,11 +99,14 @@ main .last-visit .products article {
     position: relative;
     text-align: center;
     background-color: white;
-    box-shadow: 5px 9px 5px -4px rgba(56, 55, 56, 1);
     border-radius: 3px;
     overflow: hidden;
     padding: 15px;
     margin-bottom: 5px;
+}
+
+main .last-visit .products article:hover {
+    box-shadow: 5px 9px 5px -4px rgba(56, 55, 56, 1);
 }
 
 main .last-visit .products article img {
@@ -125,11 +128,14 @@ main .sale .products article {
     position: relative;
     text-align: center;
     background-color: white;
-    box-shadow: 5px 9px 5px -4px rgba(56, 55, 56, 1);
     border-radius: 3px;
     overflow: hidden;
     padding: 15px;
     margin-bottom: 5px;
+}
+
+main .sale .products article:hover {
+    box-shadow: 5px 9px 5px -4px rgba(56, 55, 56, 1);
 }
 
 main .sale .products article img {
@@ -153,27 +159,36 @@ main section article div i {
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    right: 7px;
-    bottom: 38px;
+    right: 35px;
+    bottom: 45px;
+    transition: all 0.5s;
+}
+
+main section article div i:hover {
+    transform: rotate(-90deg);
 }
 
 main .price {
     display: block;
-    margin-right: 20%;
+    margin-right: 10%;
     font-size: 18px;
-    block-size: 30%;
 }
 
 main .discount {
     display: block;
     font-size: 16px;
     color: #39b54a;
-    block-size: 30%;
 }
 
 main .description {
     font-size: 16px;
-    display: none;
+    display: block;
+    color: #fff;
+    transition: all 250ms;
+}
+
+main .description:hover {
+    color: black;
 }
 
 footer {
@@ -189,6 +204,10 @@ footer {
 footer .icono {
     color: #1259c3;
     font-size: 2em;
+}
+
+footer .icono:hover {
+    color: #39b54a;
 }
 
 /* media querys */
@@ -263,14 +282,14 @@ footer .icono {
         bottom: 35px;
     }
     main .price {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     main .discount {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     main .description {
-        display: flex;
-        font-size: 0.7em;
+        color: black;
+        font-size: 0.9em;
     }
 }
 
@@ -342,14 +361,21 @@ footer .icono {
         bottom: 37px;
     }
     main .price {
-        font-size: 0.7em;
+        font-size: 1em;
     }
     main .discount {
-        font-size: 0.7em;
+        font-size: 1em;
     }
     main .description {
+        color: black;
+        font-size: 1em;
+    }
+    footer {
         display: flex;
-        font-size: 0.7em;
+        justify-content: space-around;
+    }
+    .copyright {
+        padding: 10px;
     }
 }
 
@@ -402,4 +428,18 @@ form p button {
 
 .login p {
     margin: 10px;
+}
+
+.login form p button {
+    background: #1259c3;
+    color: white;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 250ms;
+}
+
+.login form p button:hover {
+    background: #0022AA;
+    cursor: pointer;
 }
