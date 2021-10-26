@@ -41,28 +41,28 @@
         <form action="/" method="get">
             <h1>Registro</h1>
             <p>
-                <input type="text" name="nombre" placeholder="Nombre y apellido">
+                <input type="text" name="nombre" placeholder="Nombre y apellido" required>
             </p>
             <p>
-                <input type="text" name="usuario" placeholder="Nombre de usuari@">
+                <input type="text" name="usuario" placeholder="Nombre de usuari@" required>
             </p>
             <p>
-                <input type="email" name="email" placeholder="E-mail">
+                <input type="email" name="email" placeholder="E-mail" required>
             </p>
             <p>
             <h3>Fecha de nacimiento</h3>
             </p>
             <p>
-                <input type="date" name="nacimiento">
+                <input type="date" name="nacimiento" required>
             </p>
             <p>
-                <input type="text" name="domicilio" placeholder="Domicilio">
+                <input type="text" name="domicilio" placeholder="Domicilio" required>
             </p>
             <h3>Perfil del usuari@</h3>
             </p>
             <p>
                 <label for="Comprador">Comprador</label>
-                <input type="radio" name="perfil" value="Comprador">
+                <input type="radio" name="perfil" value="Comprador" required>
             </p>
             <p>
                 <label for="Vendedor">Vendedor</label>
@@ -95,13 +95,13 @@
             <h3>Foto de usuari@</h3>
             </p>
             <p>
-                <input type="file" name="foto" accept=".jpg,.png">
+                <input type="file" name="foto" accept=".jpg,.png" required>
             </p>
             <p>
-                <input type="password" name="password" placeholder="Contraseña">
+                <input type="password" name="password" placeholder="Contraseña" required>
             </p>
             <p>
-                <input type="password" name="confpassword" placeholder="Confirmar Contraseña">
+                <input type="password" name="confpassword" placeholder="Confirmar Contraseña" required>
             </p>
             <p>
                 <button type="reset">Borrar</button>
